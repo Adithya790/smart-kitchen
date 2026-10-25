@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Kitchen Inventory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🥬 Smart Kitchen Inventory</h1>
+
+    <div class="container">
+        <h2>Add Kitchen Item</h2>
+
+        <input type="text" id="name" placeholder="Item name">
+        <input type="number" id="quantity" placeholder="Quantity" min="0">
+        <input type="date" id="expiry">
+
+        <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <div class="container">
+        <h2>My Inventory</h2>
+        <p>Total Items: <span id="total">0</span></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Expiry Date</th>
+                    <th>status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="itemList"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
